@@ -61,5 +61,13 @@ namespace G4_Ejemplo3_4_Ejercicio3_
             arreglof[3].CalcularArea(label9);
             arreglof[4].CalcularArea(label10);
         }
+
+        private void btncalcularrombo_Click(object sender, EventArgs e)
+        {
+            double diagomay = double.Parse(txtmay.Text);
+            double diagomen = double.Parse(txtmen.Text);
+            Rombo rombo = new Rombo(diagomay, diagomen);
+            rombo.CalcularArea(label13);
+        }
     }
 }
