@@ -17,6 +17,8 @@ namespace G4_Ejemplo3_4_Ejercicio3_
             InitializeComponent();
         }
 
+        Figura[] arreglof = new Figura[5]; //Agregamos el arreglo de la clase figura
+
         private void btncalcularlado_Click(object sender, EventArgs e)
         {
             double L = double.Parse(txtlado.Text);
@@ -32,6 +34,32 @@ namespace G4_Ejemplo3_4_Ejercicio3_
 
             Circulo circulo = new Circulo(A, R);
             circulo.CalcularArea(label4);
+        }
+
+        private void btnarreglo_Click(object sender, EventArgs e)
+        {
+            //inicialización de variables
+            double R = double.Parse(txtarreglo.Text);
+            double A = 0;
+            double L = double.Parse(txtarreglo.Text);
+
+            /*  Creamos objetos de tipo Figura quye pueden ser cuadrados o circulos. En el parámetro del valor modificamos
+                en una unidad para que no se vea en todo el mismo resultado  */
+
+            arreglof[0] = new Cuadrado(A, L);
+            arreglof[1] = new Cuadrado(A, L+1);
+            arreglof[2] = new Circulo(A, R);
+            arreglof[3] = new Circulo(A, R+1);
+            arreglof[4] = new Circulo(A, R+2);
+
+            /*  Cada objeto envñia la respuesta a su label correspondiente. El label mostrará el cálculo de acuerdo 
+                al objeto que lo invocó  */
+
+            arreglof[0].CalcularArea(label6);
+            arreglof[1].CalcularArea(label7);
+            arreglof[2].CalcularArea(label8);
+            arreglof[3].CalcularArea(label9);
+            arreglof[4].CalcularArea(label10);
         }
     }
 }

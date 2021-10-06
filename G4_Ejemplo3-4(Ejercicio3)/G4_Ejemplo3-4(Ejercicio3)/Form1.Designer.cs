@@ -39,15 +39,26 @@
             this.txtradio = new System.Windows.Forms.TextBox();
             this.btncalcularradio = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnarreglo = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtarreglo = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(2, -1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -152,6 +163,95 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "label4";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.label10);
+            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Controls.Add(this.label8);
+            this.tabPage3.Controls.Add(this.label7);
+            this.tabPage3.Controls.Add(this.label6);
+            this.tabPage3.Controls.Add(this.txtarreglo);
+            this.tabPage3.Controls.Add(this.label5);
+            this.tabPage3.Controls.Add(this.btnarreglo);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(597, 271);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Arreglo";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btnarreglo
+            // 
+            this.btnarreglo.Location = new System.Drawing.Point(123, 80);
+            this.btnarreglo.Name = "btnarreglo";
+            this.btnarreglo.Size = new System.Drawing.Size(75, 23);
+            this.btnarreglo.TabIndex = 0;
+            this.btnarreglo.Text = "Calcular";
+            this.btnarreglo.UseVisualStyleBackColor = true;
+            this.btnarreglo.Click += new System.EventHandler(this.btnarreglo_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(30, 39);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 13);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Valor:";
+            // 
+            // txtarreglo
+            // 
+            this.txtarreglo.Location = new System.Drawing.Point(71, 39);
+            this.txtarreglo.Name = "txtarreglo";
+            this.txtarreglo.Size = new System.Drawing.Size(174, 20);
+            this.txtarreglo.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(432, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "label6";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(435, 80);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "label7";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(435, 116);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "label8";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(435, 151);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "label9";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(435, 184);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(41, 13);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "label10";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,6 +265,8 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -182,6 +284,15 @@
         private System.Windows.Forms.Button btncalcularradio;
         private System.Windows.Forms.TextBox txtradio;
         private System.Windows.Forms.Label label3;
+        protected System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtarreglo;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnarreglo;
     }
 }
 
